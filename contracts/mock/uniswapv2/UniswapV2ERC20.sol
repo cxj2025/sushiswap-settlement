@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: Apache-2.0
 
-pragma solidity =0.6.12;
+pragma solidity >=0.6.0;
 
 import "./libraries/SafeMath.sol";
 
 contract UniswapV2ERC20 {
-    using SafeMathUniswap for uint256;
+    using SafeMath for uint256; // Corrected line, moved to the top of contract definition.
 
     string public constant name = "SushiSwap LP Token";
     string public constant symbol = "SLP";
